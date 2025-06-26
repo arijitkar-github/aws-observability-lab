@@ -1,0 +1,21 @@
+{
+  "dashboard_title": "EC2 Linux System Health",
+  "description": "Dashboard to monitor CPU, memory, and disk usage from Splunk forwarders.",
+  "panels": [
+    {
+      "title": "Average CPU Usage (5 min)",
+      "search": "index=linux_logs sourcetype=cpu | timechart span=5m avg(usage_percent)",
+      "viz": "line"
+    },
+    {
+      "title": "Memory Utilization",
+      "search": "index=linux_logs sourcetype=memory | timechart span=5m avg(used_percent)",
+      "viz": "area"
+    },
+    {
+      "title": "Disk Usage",
+      "search": "index=linux_logs sourcetype=disk | timechart span=5m avg(used_percent)",
+      "viz": "bar"
+    }
+  ]
+}
