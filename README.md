@@ -30,3 +30,12 @@ To build a simulated real-world log monitoring stack using AWS EC2 and Splunk, e
 - ✅ Custom parsing for structured log insights
 
 ## 📁 Repo Structure
+
+aws-observability-lab/
+├── scripts/
+│ └── install_splunk.sh
+├── splunk/
+│ └── dashboards/
+├── diagrams/
+│ └── architecture.png
+└── README.md
