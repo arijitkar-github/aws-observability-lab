@@ -31,11 +31,13 @@ To build a simulated real-world log monitoring stack using AWS EC2 and Splunk, e
 
 ## 📁 Repo Structure
 
+```
 aws-observability-lab/
 ├── scripts/
-│ └── install_splunk.sh
+│   └── install_splunk.sh
 ├── splunk/
-│ └── dashboards/
+│   └── dashboards/
 ├── diagrams/
-│ └── architecture.png
+│   └── architecture.png
 └── README.md
+```
